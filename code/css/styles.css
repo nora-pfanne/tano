@@ -1,0 +1,62 @@
+/* Farbpalette */
+:root {
+    --beige-bg: #f7f4ea;
+    --dark-text: #333;
+    --highlight-green: #a5b89a;
+    --soft-red: #e29797;
+    --dark-gray: #555;
+    --light-gray: #ddd;
+    --white: #fff;
+}
+
+/* Grundlegendes Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--beige-bg);
+    color: var(--dark-text);
+}
+
+header {
+    background-color: var(--highlight-green);
+    padding: 20px;
+    text-align: center;
+    color: var(--white);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.recipe {
+    border: 1px solid var(--light-gray);
+    padding: 15px;
+    background-color: var(--white);
+    margin-bottom: 20px;
+    border-radius: 20px; /* Abgerundete Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Schatten für Tiefeneffekt */
+}
+
+.recipe h3 {
+    color: var(--soft-red); /* Titel in Rot */
+}
+
+footer {
+    background-color: var(--highlight-green);
+    text-align: center;
+    padding: 10px;
+    color: var(--white);
+    margin-top: 20px;
+}
