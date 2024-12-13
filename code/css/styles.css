@@ -11,7 +11,7 @@
 
 /* Grundlegendes Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--beige-bg);
@@ -59,4 +59,71 @@ footer {
     padding: 10px;
     color: var(--white);
     margin-top: 20px;
+}
+
+/* Basis-Styles für die Navigationsleiste */
+nav {
+    background-color: var(--highlight-green); /* Dunkelgrüner Hintergrund für die Navigation */
+    overflow: hidden;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Links der Navigationsleiste */
+.nav-link {
+    color: var(--white); /* Weißer Text in der Navigation */
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    background-color: var(--soft-red); /* Hellroter Hintergrund beim Hover */
+    color: var(--white);
+}
+
+/* Hamburger-Icon (wird nur auf kleinen Bildschirmen angezeigt) */
+.icon {
+    display: none;
+}
+
+/* Media Query für Bildschirme bis zu 768px Breite (z.B. Smartphones) */
+@media screen and (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-link {
+        display: none; /* Links sind standardmäßig versteckt */
+        width: 100%;
+        text-align: left;
+        padding: 10px 0;
+    }
+
+    .nav-link.show {
+        display: block; /* Zeige die Links an, wenn das Hamburger-Icon geklickt wird */
+    }
+
+    /* Hamburger-Icon sichtbar machen */
+    .icon {
+        display: block;
+        color: var(--white);
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .icon:hover {
+        color: var(--soft-red); /* Hamburger Icon Hover */
+    }
 }
