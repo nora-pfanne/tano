@@ -7,35 +7,12 @@
     <title>TaNo</title>
     <!-- Verlinkung zur externen CSS-Datei -->
     <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/header.js" defer></script>
 </head>
 <body>
 
-<header>
-    <div class="header-container">
-        <div class="logo">
-            <a href="#home">
-                <img src="images/logo.png" alt="Logo" class="logo-img">
-            </a>
-        </div>
-        <div class="search-bar">
-            <form action="/suche" method="get">
-                <input type="text" placeholder="Search for recipes..." name="search" required>
-                <button type="submit">Search</button>
-            </form>
-        </div>
-    </div>
-    <nav>
-        <div class="nav-container">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#recipes" class="nav-link">Recipes</a>
-            <a href="#garden" class="nav-link">Garden</a>
-            <a href="pages/about-us.html" class="nav-link">About us</a>
-            <a href="#contact" class="nav-link">Contact</a>
-            <!-- Hamburger Icon -->
-            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
-        </div>
-    </nav>
-</header>
+<!-- Benutzerdefiniertes Header Web Component -->
+<custom-header></custom-header>
 
 <main>
     <section id="recipes">

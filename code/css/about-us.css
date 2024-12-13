@@ -1,0 +1,68 @@
+/* Spezifisches CSS für die About Us Seite */
+
+
+/* Grundlegende Formatierung für den About Us Abschnitt */
+.about-page {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e8e0d5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox-Layout für den About Us Bereich */
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Styling für den Textbereich */
+.about-text {
+    flex: 1;
+}
+
+.about-text h1 {
+    font-size: 3rem;
+    color: #5a4e45;
+    margin-bottom: 10px;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    color: #7b6f61;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #6b6b6b;
+}
+
+/* Styling für das Avatar-Bild */
+.about-avatar {
+    flex-shrink: 0;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #e8e0d5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Beispiel für eine Media Query für mobile Geräte */
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-avatar {
+        margin-top: 20px;
+    }
+}
