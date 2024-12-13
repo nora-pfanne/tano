@@ -30,6 +30,14 @@ header h1 {
     font-size: 36px;
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 main {
     padding: 20px;
     max-width: 1200px;
@@ -126,4 +134,115 @@ nav {
     .icon:hover {
         color: var(--soft-red); /* Hamburger Icon Hover */
     }
+}
+
+/* Logo */
+.logo {
+    flex: 0 0 auto; /* Logo soll seine normale Größe beibehalten */
+    margin-right: 20px; /* Platz zwischen Logo und Suchleiste */
+}
+
+.logo img {
+    height: 70px; /* Höhe des Logos anpassen */
+    width: auto; /* Breite bleibt proportional */
+}
+
+/* Suchleiste */
+.search-bar {
+    display: flex; /* Ermöglicht die horizontale Ausrichtung des Suchfelds und des Buttons */
+    justify-content: center; /* Zentriert die Suchleiste innerhalb des Containers */
+    align-items: center;
+}
+
+.search-bar form {
+    display: flex; /* Eingabefeld und Button nebeneinander */
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid var(--light-gray);
+    border-radius: 20px;
+    width: 200px;
+    outline: none;
+    transition: width 0.3s;
+}
+
+.search-bar input[type="text"]:focus {
+    width: 250px;
+}
+
+.search-bar button {
+    background-color: var(--soft-red);
+    color: var(--white);
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: var(--dark-text);
+}
+
+/* Responsive Anpassungen */
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .search-bar input[type="text"] {
+        width: 100%;
+    }
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--dark-text); /* Verwende die gleiche Farbe wie im Design */
+    color: var(--white); /* Textfarbe */
+    padding: 40px 20px;
+}
+
+.about-us {
+    display: flex; /* Flexbox zum Anordnen des Avatars und des Textes nebeneinander */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Avatar Styling */
+.avatar-container {
+    flex: 0 0 auto;
+    margin-right: 20px; /* Abstand zwischen Avatar und Text */
+}
+
+.about-avatar {
+    width: 100px; /* Avatar Größe */
+    height: 100px;
+    border-radius: 50%; /* Macht den Avatar rund */
+    object-fit: cover; /* Damit das Bild gut ins runde Format passt */
+}
+
+/* About Us Text */
+.about-text {
+    flex-grow: 1;
+}
+
+.about-text h4 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
 }

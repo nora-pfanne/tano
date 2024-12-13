@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Leckere Rezepte und kulinarische Inspirationen auf meinem Foodblog.">
+    <meta name="description" content="Best recipes from the north">
     <title>TaNo</title>
     <!-- Verlinkung zur externen CSS-Datei -->
     <link rel="stylesheet" href="css/styles.css">
@@ -12,30 +12,34 @@
 
 <header>
     <div class="header-container">
-        <div>
-            <h1>TaNo</h1>
+        <div class="logo">
+            <a href="#home">
+                <img src="images/logo.png" alt="Logo" class="logo-img">
+            </a>
+        </div>
+        <div class="search-bar">
+            <form action="/suche" method="get">
+                <input type="text" placeholder="Search for recipes..." name="search" required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
     <nav>
         <div class="nav-container">
-            <a href="#home" class="nav-link">Startseite</a>
-            <a href="#rezepte" class="nav-link">Rezepte</a>
-            <a href="#garden" class="nav-link">Garten</a>
-            <a href="#kontakt" class="nav-link">Kontakt</a>
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#recipes" class="nav-link">Recipes</a>
+            <a href="#garden" class="nav-link">Garden</a>
+            <a href="pages/about-us.html" class="nav-link">About us</a>
+            <a href="#contact" class="nav-link">Contact</a>
             <!-- Hamburger Icon -->
             <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
         </div>
     </nav>
-        </div>
-    </div>
-    
 </header>
 
-<div class="hero">
-    <h2>Aus dem wahren Norden</h2>
-</div>
-
 <main>
-    <section id="rezepte">
-        <h2>Neueste Rezepte</h2>
+    <section id="recipes">
+        <h2>Try this!</h2>
 
         <div class="recipe">
             <h3>Pizza Margherita</h3>
