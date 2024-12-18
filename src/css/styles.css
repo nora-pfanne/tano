@@ -14,8 +14,8 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--beige-bg);
-    color: var(--dark-text);
+    background-color: var(--highlight-green);
+    color: var(--white);
 }
 
 header {
@@ -52,6 +52,7 @@ h2 {
     border: 1px solid var(--light-gray);
     padding: 15px;
     background-color: var(--white);
+    color: var(--dark-text);
     margin-bottom: 20px;
     border-radius: 20px; /* Abgerundete Ecken */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Schatten für Tiefeneffekt */

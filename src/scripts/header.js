@@ -34,7 +34,7 @@ class CustomHeader extends HTMLElement {
         const logo = this.querySelector("#logo"); // Verwende querySelector, um das Logo-Element zu finden
 
         // Hier überprüfen wir den aktuellen Pfad der Seite
-        if (window.location.pathname === "/code/index.html") {
+        if (window.location.pathname === "/src/index.html") {
             logo.src = "images/logo.png";  // Ändere den Logo-Link auf der spezifischen Seite
         }
     }
